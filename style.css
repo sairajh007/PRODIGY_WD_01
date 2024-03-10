@@ -1,0 +1,76 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #282c34; /* Dark background for a modern look */
+    color: white;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+.game-container {
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    background: #1e212d; /* Slightly lighter dark shade for the container */
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 10px;
+    margin-bottom: 20px;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: #333740; /* Dark cells for contrast */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.5s ease; /* Smooth background transition */
+}
+
+.cell:hover {
+    background-color: #41454d; /* Lighter cell on hover for interactivity */
+}
+
+.cell:before {
+    content: '';
+    float: left;
+    padding-top: 100%;
+}
+
+.cell X {
+    color: #4CAF50; /* Green color for Player X */
+}
+
+.cell O {
+    color: #F44336; /* Red color for Player O */
+}
+
+.status {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+button {
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #008CBA; /* Blue button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #005f73; /* Darker blue on hover */
+}
